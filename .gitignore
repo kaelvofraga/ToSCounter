@@ -1,0 +1,7 @@
+# PhoneGap files and directories
+platforms/**
+plugins/**
+hooks/**
+.vscode/settings.json
+typings/**
+*.onetoc2

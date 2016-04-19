@@ -1,0 +1,78 @@
+.stats {	
+	text-align: center;
+	margin-left: 13%;
+}
+
+@media (min-width: 1000px) {
+	.stats {	
+		max-width: 240px;
+		margin: 10px auto;
+	}
+}
+@media (min-width: 600px) {	
+	.stat .badge{
+		float: right;
+	}
+}
+
+h1 {
+	text-align: center;
+}
+
+.user-name {
+    color: #333;
+}
+
+.user-name:hover {
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;      
+}
+
+input {
+    max-width: 240px;
+}
+
+h1 .badge {
+	font-size: 22px;
+	margin-top: -5px;
+	margin-left: 5px;
+}
+
+.stats .stat {
+	margin-top: 5px;
+	border-radius: 5px;
+	font-size: 32px;
+	border: 2px solid #999;
+}
+.stats .stat .badge {
+	font-size: 22px;
+	margin-top: 10px;
+	display: block !important;
+}
+
+.reset {
+	max-width: 240px;
+	margin-top: 25px;
+}
+
+.col-xs-12 {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.skills img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 25px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}

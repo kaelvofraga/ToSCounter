@@ -1,0 +1,32 @@
+<h1><a class="user-name" ng-click="editName()">{{user.name}}</a> 
+    <span class="badge">Level {{user.level}}</h1>
+<input ng-show="editingName" ng-blur="saveName()" 
+       class="center-block form-control" 
+       type="text" ng-model="user.name" placeholder="Enter your name here">
+<div class="stats row">
+  <div class="stat col-xs-2 col-sm-2 col-md-12" ng-repeat="stat in stats">
+    <div class="col-xs-12 col-md-12">
+      {{stat.label | uppercase}}
+      <span class="badge">{{stat.value}}</span>
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <button class="btn btn-success btn-sm" ng-click="statIncrease(stat)">
+        <i class="fa fa-plus"></i>
+      </button>
+      <button class="btn btn-danger btn-sm " ng-click="statDecrease(stat)">
+        <i class="fa fa-minus"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<!--div class="skills">
+  <img src="img/skills.png" title="skills" alt="skills">
+</div-->
+<button class="btn btn-danger btn-block reset center-block" ng-click="reset()" 
+        ng-if="!resetTransformed">
+  Reset all
+</button>
+<button class="btn btn-block reset center-block" ng-click="undo()"
+        ng-if="resetTransformed">
+  Undo reset
+</button>
