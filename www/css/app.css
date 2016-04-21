@@ -4,7 +4,7 @@ body {
 
 .stats {	
 	text-align: center;
-	margin-left: 18%;
+	margin-left: 10px;
 }
 
 @media (min-width: 1000px) {
@@ -58,9 +58,7 @@ input {
 	font-size: 32px;
 	border: 2px solid #999;
 	padding: 0px;
-}
-.stats .stat .number {
-	margin-left: 12px;
+	height: 80px;
 }
 @media (max-width: 400px) {	
 	.stats .stat{
