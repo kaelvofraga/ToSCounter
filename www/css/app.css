@@ -1,6 +1,10 @@
+body {
+	padding: 10px;
+}
+
 .stats {	
 	text-align: center;
-	margin-left: 13%;
+	margin-left: 18%;
 }
 
 @media (min-width: 1000px) {
@@ -19,6 +23,21 @@ h1 {
 	text-align: center;
 }
 
+h1 .badge {
+	font-size: 22px;
+	margin-top: -5px;
+	margin-left: 5px;
+}
+@media (max-width: 400px) {	
+	h1 {
+		font-size: 26px;
+	}
+	
+	h1 .badge {
+		font-size: 18px;		
+	}
+}
+	
 .user-name {
     color: #333;
 }
@@ -33,22 +52,24 @@ input {
     max-width: 240px;
 }
 
-h1 .badge {
-	font-size: 22px;
-	margin-top: -5px;
-	margin-left: 5px;
-}
-
 .stats .stat {
-	margin-top: 5px;
+	margin: 5px;
 	border-radius: 5px;
 	font-size: 32px;
 	border: 2px solid #999;
+	padding: 0px;
 }
-.stats .stat .badge {
-	font-size: 22px;
-	margin-top: 10px;
-	display: block !important;
+.stats .stat .number {
+	margin-left: 12px;
+}
+@media (max-width: 400px) {	
+	.stats .stat{
+		font-size: 22px;
+	}
+	
+	.stats .stat .badge {
+		font-size: 18px;
+	}
 }
 
 .reset {
