@@ -1,10 +1,12 @@
-body {
-	padding: 10px;
+.html {
+	height: 100%;
 }
 
 .stats {	
 	text-align: center;
-	margin-left: 10px;
+	margin: 0 auto;
+	margin-left: 32px;
+	max-width: 800px;
 }
 
 @media (min-width: 1000px) {
@@ -21,21 +23,13 @@ body {
 
 h1 {
 	text-align: center;
+	font-size: 26px;
 }
 
 h1 .badge {
-	font-size: 22px;
+	font-size: 18px;
 	margin-top: -5px;
 	margin-left: 5px;
-}
-@media (max-width: 400px) {	
-	h1 {
-		font-size: 26px;
-	}
-	
-	h1 .badge {
-		font-size: 18px;		
-	}
 }
 	
 .user-name {
@@ -55,36 +49,28 @@ input {
 .stats .stat {
 	margin: 5px;
 	border-radius: 5px;
-	font-size: 32px;
+	font-size: 22px;
 	border: 2px solid #999;
 	padding: 0px;
 	height: 80px;
 }
-@media (max-width: 400px) {	
-	.stats .stat{
-		font-size: 22px;
+@media (orientation: landscape) and (max-width: 700px){
+	.stats .stat {
+		width: 29%;
 	}
-	
-	.stats .stat .badge {
-		font-size: 18px;
-	}
+}
+.stats .stat .badge {
+	font-size: 18px;
 }
 
 .reset {
 	max-width: 240px;
-	margin-top: 25px;
+	margin-top: 32px;
 }
 
 .col-xs-12 {
 	padding: 0;
 	margin: 0 auto;
-}
-
-.skills img {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	margin-top: 25px;
 }
 
 .noselect {
@@ -94,4 +80,14 @@ input {
   -moz-user-select: none;      /* Firefox */
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently not supported by any browser */
+}
+
+.toscounter-header {
+	color: white;
+	background-color: #288455;
+	width: 100%;
+	height: 50px;
+    line-height: 50px;
+	text-align: center;
+	font-size: 22px;
 }
